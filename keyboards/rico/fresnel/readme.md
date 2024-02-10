@@ -27,9 +27,9 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 You can enter the bootloader in 5 ways:
 
 * **QMK software ways:**
-    * **Bootmagic reset**: hold down the key at (0,0) in the matrix (the top left key or Escape) and plug in the keyboard
+    * **(NOT WORKING YET)Bootmagic reset**: hold down the key at (0,0) in the matrix (the top left key or Escape) and plug in the keyboard
     * **Keycode in layout**: press the key mapped to `QK_BOOT` that is the top left key or Escape on layer 2
-    * **Physical BOOTSEL button**: double tap the BOOTSEL button
+    * **Physical RUN button**: double tap the RUN button
 * **Native RP2040 MCU ways:**
-    * **Physical BOOTSEL and RESET button**: while keyboard is plugged maintain RESET button pressed, press BOOTSEL button then release the RESET button
-    * **Physical RESET button**: maintain RESET button pressed while plugging in the keyboard
+    * **Physical RUN and BOOT button**: while keyboard is plugged maintain BOOT button pressed, press RUN button then release the BOOT button
+    * **Physical BOOT button**: maintain BOOT button pressed while plugging in the keyboard
