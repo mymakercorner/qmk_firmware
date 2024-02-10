@@ -22,7 +22,7 @@
         "custom_lite": true
     },
     "processor": "RP2040",
-    "url": "https://github.com/mymakercorner/private_fresnel",
+    "url": "https://github.com/mymakercorner",
     "usb": {
         "device_version": "1.0.0",
         "pid": "0x464C",
