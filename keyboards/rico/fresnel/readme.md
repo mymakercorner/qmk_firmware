@@ -1,23 +1,24 @@
-# Phoenix Project No 1
+# Fresnel TKL PCB
 
-![Type S](https://i.imgur.com/YJaz6P3h.jpeg)
-![Type H](https://i.imgur.com/7Lz9oRLh.jpeg)
+This is an ongoing collaborative effort between me(Rico) and Gondolindrim to provide in a future PCBs using optical technology.  
+The core technique used for the PCB has to be credited to Gondolindrim who found the magic trick to have good latencies while not eating a lot of power.  
+On the Fresnel TKL PCB I experimented a few hardware things that may in the future be kept in the final design (or not).
 
-This is an open source collection of M65-A keyboard replacement PCBs, available both in solderable and hotswap variants.  
+As a personal goal I wanted to have an optical PCB for my Frog, hence why I worked on this ;)
+
+
 
 * Keyboard Maintainer: [Eric Becourt, aka Rico](https://github.com/mymakercorner)
-* Hardware Supported: Phoenix Project No 1 Type S (solder) and Type H (hotswap)
-* Hardware Availability: hardware is open source, Github repository contains everything to easily have fully assembled PCBs at JLCPCB
-
-More details in Github repository [here](https://github.com/mymakercorner/Phoenix_Project_No1)
+* Hardware Supported: Fresnel TKL Rev1.1 PCB
+* Hardware Availability: not publicly available yet but the plan is to make it open source in the future, so that anyone can easily design optical PCBs.
 
 Make example for this keyboard (after setting up your build environment):
 
-    make rico/phoenix_project_no1:default
+    make rico/fresnel:default
 
 Flashing example for this keyboard:
 
-    make rico/phoenix_project_no1:default:flash
+    make rico/fresnel:default:flash
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 
