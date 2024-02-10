@@ -19,8 +19,8 @@
 
 static matrix_row_t s_previous_matrix[MATRIX_ROWS];
 
-static uint8_t s_col_io_pins[MATRIX_COLS] = {GP1, GP2, GP3, GP4, GP5, GP8, GP9, GP10, GP11, GP12, GP13, GP14, GP15, GP0, GP17, GP18, GP26, GP27};
-static uint8_t s_row_io_pins[MATRIX_ROWS] = {GP25, GP24, GP28, GP29, GP23, GP22};
+static uint8_t s_col_io_pins[MATRIX_COLS] = MATRIX_COL_PINS;
+static uint8_t s_row_io_pins[MATRIX_ROWS] = MATRIX_ROW_PINS;
 
 void matrix_init_custom(void) {
     dac_init();
@@ -35,7 +35,6 @@ void matrix_init_custom(void) {
     {
         palSetLineMode(s_col_io_pins[i], colums_pin_mode);
         palClearLine(s_col_io_pins[i]);
-        wait_us(50);
     }
 
     /* Configuration of row pins using ChibiOS hal */
