@@ -24,7 +24,8 @@ static uint8_t s_row_io_pins[MATRIX_ROWS] = MATRIX_ROW_PINS;
 
 void matrix_init_custom(void) {
     dac_init();
-    dac_write_val(32); // This should translate to ~50mV
+    //dac_write_val(32); // This should translate to ~50mV
+    dac_write_val(25); // This should translate to ~40mV
 
     for (int i = 0; i < MATRIX_ROWS; i++) {
         s_previous_matrix[i] = 0;
